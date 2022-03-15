@@ -1,0 +1,20 @@
+<div class="input-form">
+  <i class="fas fa-search filter__icon"></i>
+  <input
+    type="text"
+    name=""
+    id="search"
+    placeholder="filter"
+    class="filter__input"
+    autocomplete="off"
+    (keyup)="filterNotes($event)"
+  />
+</div>
+<ul class="notes" [@staggerAnimation]>
+  <div [@listAnimation] *ngFor="let note of filteredNotes">
+    <app-note-card
+      [note]="note"
+      (newItemEvent)="remove($event)"
+    ></app-note-card>
+  </div>
+</ul>

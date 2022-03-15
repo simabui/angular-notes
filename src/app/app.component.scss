@@ -1,0 +1,36 @@
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 137, 197);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 137, 197, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.addButton {
+  position: fixed;
+  bottom: 0;
+  width: 250px;
+  padding: 15px 0;
+  cursor: pointer;
+  background: #8a84b6;
+  color: #fff;
+  font-size: 16px;
+  border: transparent;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}

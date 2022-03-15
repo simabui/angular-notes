@@ -1,0 +1,67 @@
+.form {
+  min-width: 350px;
+}
+form {
+  width: 100%;
+}
+.label {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: 700;
+
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+}
+.input {
+  border: 1px solid #ececec;
+  background: #f4f4fa;
+  width: 300px;
+  padding: 5px 10px;
+  font-family: "Montserrat";
+  border: 2px solid transparent !important;
+  transition: all 0.2s linear;
+  &:focus {
+    border: 2px solid #8ee2f7 !important;
+  }
+  resize: vertical;
+}
+.button-group {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  padding: 7px 10px;
+
+  &-cancel {
+    background: transparent;
+    text-decoration: underline;
+  }
+  &-save {
+    background: #03d788;
+    margin-left: 5px;
+  }
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline-offset: 0px !important;
+  outline: none !important;
+}
+
+.ng-touched {
+  .ng-invalid:not(form) {
+    border-left: 5px solid #bb1411 !important;
+  }
+}
+.form-error {
+  color: #bb1411;
+  display: inline-block;
+}

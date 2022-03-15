@@ -1,0 +1,35 @@
+.input-form {
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.filter {
+  &__icon {
+    color: #dee1e6;
+    min-width: 50px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__input {
+    border: 1px solid #dee1e6;
+    width: 300px;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+
+    &::placeholder {
+      color: #dee1e6;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.notes {
+  padding: 0;
+  list-style-type: none;
+}

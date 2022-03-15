@@ -1,0 +1,10 @@
+<li class="notes__item" (click)="switchService.showNoteFormWithValues(note)">
+  <span class="notes__title">{{ note.title | titlecase }}</span>
+  <p class="notes__desc" #bodyText>
+    {{ note.desc }}
+  </p>
+  <div class="notes__delete" (click)="removeItem($event)">
+    <i class="fas fa-times"></i>
+  </div>
+  <div #truncator class="fade-out-truncation"></div>
+</li>
